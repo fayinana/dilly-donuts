@@ -12,8 +12,7 @@
 </head>
 
 <body>
-
-    <nav>
+    <nav id="nav">
         <ul class="section-center nav">
             <p class="menu">
                 <i class="fas fa-bars"></i>
@@ -21,31 +20,30 @@
             <p class="logo">
                 dd
             </p>
-            <div class="links hide-menu ">
-                <li><a class="link" href="#home"><i class="fas fa-home"></i> Home</a></li>
-                <li><a class="link" href="#about"><i class="fas fa-info-circle"></i> About</a></li>
-                <li><a class="link" href="#product"><i class="fas fa-box-open"></i> Products</a></li>
-                <li><a class="link" href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            <div class="links hide-menu links-container">
+                <li><a class="link scroll-link" href="#home"><i class="fas fa-home"></i> Home</a></li>
+                <li><a class="link scroll-link" href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a class="link scroll-link" href="#product"><i class="fas fa-box-open"></i> Products</a></li>
+                <li><a class="link scroll-link" href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
             </div>
         </ul>
     </nav>
+
     <header class="header" id="home">
         <div class="header-info">
             <h4>dilly donut is a best and quality donut in eth</h4>
             <h1>dilly donuts</h1>
         </div>
+        <img class="banner-img" src="./assets/images/hero-img.png" alt="">
     </header>
 
-
-
-
+    <!--  -->
 
     <section class="services">
         <div class="section-center">
 
             <article class="service-info">
-                <h2>Lorem ipsum dol <br>
-                    <span>or sit amet.</span>
+                <h2>Lorem ipsum dol <br>or sit amet.
                 </h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, consectetur?</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, consectetur? Lorem, ipsum
@@ -53,55 +51,63 @@
                     sit amet consectetur adipisicing elit. Aspernatur, fugit!</p>
             </article>
             <article class="service-img">
-<!-- <img src="./assets/images/donut 6.jpg" alt="" width="100%" height="100%"> -->
-<video src="./assets/images/donut 12.mp4" width="100%" height="100%"></video>
-</article>
-</div>
-</section>
-<section class="about section-center" id="about">
-    <h3>only the best ingredients</h3>
+                <video src="./assets/images/donut-vidio.mp4" width="100%" height="100%" autoplay loop muted
+                    aria-disabled="true"></video>
+            </article>
+        </div>
+    </section>
+
+    <!--  -->
+    <!--  -->
+    <section class="about section-center" id="about">
+        <h3>only the best ingredients</h3>
         <p>Lorem, ipsum dolor sit amet consec
             Lorem ipsum lit. Facilis, veniam!
             tetur adipisicing elit. Optio, fuga!</p>
         <button class="btn">get donut</button>
     </section>
+    <!--  -->
+    <!--  -->
 
-<section class="products" id="product">
-    <article class="product-item">
-        <img src="./assets/images/donut 1.webp" alt="">
-    </article>
-    <article class="product-item">
-        <img src="./assets/images/donut 2.webp" alt="">
-    </article>
-</section>
-    
-    
+    <section class="products" id="product">
+        <article>
+            <img src="./assets/images/donut 3.jpeg" alt="" width="100%" height="100%">
+
+        </article>
+        <article>
+            <img src="./assets/images/donut 1.jpg" alt="" width="100%" height="100%">
+
+        </article>
+    </section>
+
+    <!--  -->
+
     <section class="show-case section-center">
         <h5 class="title">follow os on gram @dilly-donut</h5>
-        
+
         <div class="image-show-case">
             <div>
-                <img src="./assets/images/donut 4.jpg" alt="" width="100%" height="100%">
-                
+                <img src="./assets/images/donut 10.jpg" alt="" width="100%" height="100%">
+
             </div>
             <div>
-                <img src="./assets/images/donut 4.jpg" alt="" width="100%" height="100%">
+                <img src="./assets/images/donut 5.jpg" alt="" width="100%" height="100%">
 
             </div>
             <div>
 
-                <img src="./assets/images/donut 4.jpg" alt="" width="100%" height="100%">
+                <img src="./assets/images/donut 7.jpg" alt="" width="100%" height="100%">
             </div>
             <div>
-                <img src="./assets/images/donut 4.jpg" alt="" width="100%" height="100%">
-                
+                <img src="./assets/images/donut 11.jpg" alt="" width="100%" height="100%">
+
             </div>
             <div class="last">
                 <img src="./assets/images/donut 4.jpg" alt="" width="100%" height="100%">
-                
+
             </div>
             <div class="last">
-                <img src="./assets/images/donut 4.jpg" alt="" width="100%" height="100%">
+                <img src="./assets/images/donut 6.jpg" alt="" width="100%" height="100%">
 
             </div>
         </div>
@@ -112,7 +118,7 @@
         <h5 class="title">get 20% of discount Lorem ipsum dolor sit amet.</h5>
         <div class="form section-center">
             <input class="email" type="text">
-            <button class="submit">signup</button>
+            <button class="submit btn">signup</button>
         </div>
     </section>
     <section class="footer">

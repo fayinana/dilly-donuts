@@ -129,12 +129,14 @@ ul {
 
 .btn {
   border: none;
-
   background: #2f3f92;
   color: whitesmoke;
   padding: 0.5rem 1.5rem;
   text-transform: uppercase;
   font-weight: 400;
+  box-shadow: var(--shadow-3);
+
+  border-radius: 5px;
 }
 /* navigation style */
 nav {
@@ -143,12 +145,15 @@ nav {
   display: flex;
   align-items: center;
 
-  /* background: var(--clr-primary); */
-  background: transparent;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100000;
+}
+
+.fixed-nav {
+  background: rgb(255, 255, 255);
+  box-shadow: var(--shadow-3);
 }
 .nav {
   width: 100%;
@@ -251,8 +256,16 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
+.banner-img {
+  height: 75%;
+  top: 15%;
+  position: absolute;
+  right: 0%;
+  display: none;
+}
 .header-info {
   display: flex;
   flex-direction: column;
@@ -284,10 +297,10 @@ nav {
 }
 
 .services {
+  position: relative;
   min-height: 75vh;
   width: 100%;
-  background: #FFC0CB;
-
+  background: #ffc0cb;
 }
 
 .services div {
@@ -299,10 +312,6 @@ nav {
   flex-wrap: wrap;
 }
 
-.service-img {
-  height: 200px;
-  width: 100%;
-}
 .service-info {
   padding-top: 3rem;
   width: 100%;
@@ -316,14 +325,31 @@ nav {
   font-size: clamp(1.25rem, 10vw, 2.5rem);
   text-transform: capitalize;
   font-weight: 500;
+  z-index: 1;
 }
-.service-info h2 span {
-  color: #2f3f92;
-}
+
 .service-info p {
   text-align: left;
   max-width: 400px;
   margin-bottom: 1.5rem;
+  z-index: 1;
+  font-weight: 500;
+  color: #222;
+}
+.service-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.service-img video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
 }
 
 @media screen and (min-width: 786px) {
@@ -331,12 +357,18 @@ nav {
     height: 60vh;
   }
   .service-img {
-    width: 45%;
+    position: static;
+    width: 50%;
     height: 100%;
   }
   .service-info {
-    width: 55%;
+    width: 50%;
     height: 100%;
+  }
+  .banner-img {
+    width: 40%;
+    display: initial;
+
   }
 }
 /* about */
@@ -357,36 +389,34 @@ nav {
 }
 .about p {
   max-width: 500px;
+  font-weight: 500;
+  color: #222;
 }
 
 /* products */
 
 .products {
-  width: 80%;
-  max-width: 90vw;
-  margin: 0 auto;
+  width: 100%;
   min-height: 75vh;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  background: rgb(255, 192, 203, 0.2);
+  gap: 2em 4rem;
 }
 
 .products article {
-  width: 100%;
+  width: 80%;
   height: 50%;
 }
 
-img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-}
 @media screen and (min-width: 786px) {
   .products article {
     min-height: 75vh;
-    width: 50%;
+    width: 30%;
+    max-width: 500px;
+    padding-top: calc((100vh - 75vh) / 2);
   }
 }
 
@@ -406,6 +436,8 @@ img {
 
 .show-case h5 {
   margin-bottom: 4rem;
+  color: #2f3f92;
+  font-weight: 600;
 }
 
 .image-show-case {
@@ -415,7 +447,11 @@ img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: .5rem;
+  gap: 1rem;
+}
+.image-show-case div {
+  height: 200px;
+  max-width: 200px;
 }
 .last {
   display: none;
@@ -436,7 +472,7 @@ img {
   padding: 3rem 0;
   width: 100%;
   min-height: 40vh;
-  background:  #4169E1;
+  background: #4169e1;
   text-align: center;
   display: grid;
   grid-template-columns: 1fr;
@@ -445,6 +481,7 @@ img {
 }
 .contact h5 {
   color: whitesmoke;
+  font-weight: 500;
 }
 .form {
   display: flex;
@@ -461,16 +498,14 @@ img {
 }
 
 .form .submit {
-  border: none;
-  padding: 0.5rem 2rem;
-  text-transform: capitalize;
-  background: #FFC0CB;
+  background: #ffc0cb;
+  color: #222;
 }
 
 .footer {
   width: 100%;
   min-height: 50vh;
-  background: #FFC0CB;
+  background: #ffc0cb;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -493,7 +528,9 @@ img {
   justify-content: space-between;
   gap: 3rem;
 }
-
+.active {
+  color: #ffbb00;
+}
 .footer-text ul {
   width: 100%;
   text-align: start;
@@ -505,6 +542,8 @@ img {
 
 .footer-text ul li a {
   text-transform: capitalize;
+  color: #222;
+  font-weight: 500;
 }
 @media screen and (min-width: 786px) {
   .footer-text ul {
