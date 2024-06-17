@@ -107,10 +107,11 @@ ul {
   padding: 0;
 }
 
-.img {
+img {
   width: 100%;
   display: block;
   object-fit: cover;
+  height: 100%;
 }
 
 .loading {
@@ -368,7 +369,6 @@ nav {
   .banner-img {
     width: 40%;
     display: initial;
-
   }
 }
 /* about */
