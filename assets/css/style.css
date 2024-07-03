@@ -166,7 +166,6 @@ img {
   color: var(--primary-clr);
   text-transform: none;
   font-size: clamp(1.5rem, 3vw, 2.2rem);
-  line-height: 2;
 }
 
 .mini-title {
@@ -227,18 +226,17 @@ img {
   text-transform: capitalize;
   letter-spacing: var(--letterSpacing);
 }
-.search {
-  border: 1px solid var(--seconder);
-  width: 200px;
-  height: 35px;
-  border-radius: 20000px;
-  padding: 0 1rem;
+.nav-btn.btn {
+  border-radius: 10px;
+  color: var(--primary-clr);
+  background: white;
 }
-
 .close {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 20px;
+  right: 20px;
+  color: red;
+  font-size: 1.2rem;
 }
 .show-links {
   display: flex;
@@ -247,6 +245,12 @@ img {
 @media screen and (min-width: 768px) {
   .btn.active {
     margin: 0;
+  }
+  .nav-btn.btn {
+    border-radius: 10px;
+    color: white;
+    background: var(--primary-clr);
+    margin-left: 4rem;
   }
   .menu {
     display: none;
@@ -311,13 +315,14 @@ img {
     justify-content: space-between;
   }
   .banner-info {
-    width: calc(55% - 1rem);
+    width: calc(50% - 1rem);
     text-align: left;
   }
 
   .banner-img {
     display: initial;
-    width: calc(45% - 1rem);
+    width: calc(50% - 1rem);
+    /* border: 1px solid red; */
   }
 }
 /* service style */
@@ -329,7 +334,7 @@ img {
   flex-wrap: wrap;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  row-gap: 2rem;
+  gap: 2rem 0.75rem;
   align-items: center;
   justify-content: space-between;
 }
@@ -356,6 +361,9 @@ img {
   border-radius: 50%;
   background: white;
   box-shadow: var(--shadow-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .service:hover {
   background: white;
@@ -368,6 +376,7 @@ img {
 
 .service-title {
   text-transform: capitalize;
+  font-size: clamp(0.75rem, 3vw, 1.1rem);
 }
 @media screen and (min-width: 768px) {
   .service {
@@ -444,6 +453,7 @@ img {
   border-radius: 15px;
   transition: var(--transition);
   box-shadow: var(--shadow-2);
+  position: relative;
 }
 
 .product:hover {
@@ -466,6 +476,22 @@ img {
   width: 150px;
   height: 150px;
   margin: 0 auto;
+}
+
+.heart {
+  padding: 1rem;
+  color: var(--primary-clr);
+  background: var(--seconder);
+  box-shadow: var(--shadow-4);
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 50%;
+  display: none;
+}
+
+.product:hover .heart {
+  display: block;
 }
 
 .product-title {
@@ -513,6 +539,7 @@ img {
 
 .detail-info .article-text i {
   margin-right: 1rem;
+  color: green;
 }
 
 .offer {
@@ -547,6 +574,10 @@ img {
   background: var(--seconder);
   padding: 2rem 0;
   text-align: center;
+}
+
+.testimonials p {
+  margin-top: 1rem;
 }
 
 .testimonials-div {
@@ -586,14 +617,15 @@ img {
   border-radius: 50%;
   overflow: hidden;
 }
-
+.stars {
+  color: goldenrod;
+}
 /* subscription */
 .subscription {
   width: calc(100% - 4rem);
   min-height: 300px;
   background: linear-gradient(var(--primary-clr), transparent),
-    url("/assets/images/a744f46178fff1f8d8dd9d20e39559f8.jpg") no-repeat
-      center/cover;
+    url("/assets/images/img-2.jpg") no-repeat center/cover;
   border-radius: 25px;
   color: white;
   padding: 2rem 1rem;
@@ -633,7 +665,8 @@ img {
 }
 .subscription-input::before {
   text-transform: capitalize;
-  content: "@";
+  content: "\f002";
+  font-family: "Font Awesome 5 Free";
   position: absolute;
   right: 0.5rem;
   top: 50%;
@@ -692,7 +725,28 @@ img {
   line-height: 2;
   font-size: 0.825rem;
 }
+.address i {
+  margin-right: 0.5rem;
+}
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
 
+.social-icon {
+  padding: 0.45rem 0.5rem;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  background: white;
+  color: var(--primary-clr);
+}
+
+.social-icon:hover {
+  color: white;
+  background: var(--primary-clr);
+}
 .line {
   width: 100%;
 

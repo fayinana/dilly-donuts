@@ -4,10 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Discover the best handcrafted donuts made with high-quality ingredients. Learn about our family-owned donut company and order online today.">
     <title>Dill Donuts</title>
     <link rel="stylesheet" href="./assets/css/normalize.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
 </head>
 
@@ -29,11 +38,11 @@
                 drill <br> donut
             </h3>
             <ul class="links">
-                <li class="close">❌</li>
+                <li class="close"><i class="fas fa-times"></i></li>
                 <li><a class="link scroll-link" href="#about">our story</a></li>
                 <li><a class="link scroll-link" href="#product">our Products</a></li>
                 <li><a class="link scroll-link" href="#contact"> Contact</a></li>
-                <li><input class="search" type="search" placeholder="search..."></li>
+                <li><button class="btn nav-btn active">order now</button></li>
             </ul>
         </div>
     </nav>
@@ -46,10 +55,10 @@
             <p class="banner-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi perferendis tenetur
                 ullam sint officia
                 labore incidunt! Accusantium quam eos nemo.</p>
-            <button class="btn active">order now</button>
+            <button class="btn active">order now <i class="fas fa-key"></i></button>
         </section>
         <section class="banner-img">
-            <img src="./assets/images/a744f46178fff1f8d8dd9d20e39559f8.jpg" alt="">
+            <img src="./assets/images/banner-img.png" alt="banner-img">
         </section>
     </header>
 
@@ -58,39 +67,39 @@
     <section class="services section-center">
         <div class="service">
             <div class="icon">
-
+                <i class="fas fa-shipping-fast"></i>
             </div>
             <h6 class="service-title">fastest delivery</h6>
+            <p class="text">get your donuts delivered hot and fresh.</p>
+        </div>
+        <div class="service">
+            <div class="icon">
+                <i class="fas fa-trophy"></i>
+            </div>
+            <h6 class="service-title">best quality</h6>
             <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
         </div>
         <div class="service">
             <div class="icon">
-
+                <i class="fas fa-utensils"></i>
             </div>
-            <h6 class="service-title">fastest delivery</h6>
+            <h6 class="service-title">delicious taste</h6>
             <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
         </div>
         <div class="service">
             <div class="icon">
-
+                <i class="fas fa-leaf"></i>
             </div>
-            <h6 class="service-title">fastest delivery</h6>
-            <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-        </div>
-        <div class="service">
-            <div class="icon">
-
-            </div>
-            <h6 class="service-title">fastest delivery</h6>
+            <h6 class="service-title">best ingredients</h6>
             <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
         </div>
     </section>
 
 
-    <section class="about section-center">
+    <section class="about section-center" id="about">
 
         <article class="about-img">
-            <img src="./assets/images/a744f46178fff1f8d8dd9d20e39559f8.jpg" alt="">
+            <img src="./assets/images/img-1.jpg" alt="image-about">
         </article>
         <article class="about-info">
             <h3 class="article-title">
@@ -106,32 +115,37 @@
     </section>
 
 
-    <section class="products section-center">
+    <section class="products section-center" id="product">
         <h3 class="mini-title">hot deals</h3>
         <div class="products-list">
             <div class="product">
                 <div class="product-img">
-                    <img src="./assets/images/a744f46178fff1f8d8dd9d20e39559f8.jpg" alt="">
+                    <img src="./assets/images/product-1.png" alt="product-1-img">
                 </div>
-                <h6 class="product-title">fastest delivery</h6>
-                <p class="text product-text">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                <h6 class="product-title">cinnamon bliss</h6>
+                <p class="text product-text">a classic glazed donut with a cinnamon suger</p>
                 <button class="btn product-btn"> add to cart</button>
+                <span class="heart"><i class="fas fa-heart"></i></span>
             </div>
             <div class="product">
                 <div class="product-img">
-                    <img src="./assets/images/a744f46178fff1f8d8dd9d20e39559f8.jpg" alt="">
+                    <img src="./assets/images/product-2.png" alt="product-2-img">
                 </div>
-                <h6 class="product-title">fastest delivery</h6>
+                <h6 class="product-title">chocolata dream</h6>
                 <p class="text product-text">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
                 <button class="btn product-btn"> add to cart</button>
+                <span class="heart"><i class="fas fa-heart"></i></span>
+
             </div>
             <div class="product">
                 <div class="product-img">
-                    <img src="./assets/images/a744f46178fff1f8d8dd9d20e39559f8.jpg" alt="">
+                    <img src="./assets/images/product-3.png" alt="product-3-img">
                 </div>
-                <h6 class="product-title">fastest delivery</h6>
+                <h6 class="product-title">berry burst</h6>
                 <p class="text product-text">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
                 <button class="btn product-btn"> add to cart</button>
+                <span class="heart"><i class="fas fa-heart"></i></span>
+
             </div>
 
         </div>
@@ -145,18 +159,20 @@
                 A brief history of our love affair with donuts
             </h3>
             <p class="article-text">
-                <i>🟢</i>Lorem ipsum dolor sit amet, consectetur.
+                <i class="fas fa-check-circle text-success"></i>Lorem ipsum dolor sit amet, consectetur.
             </p>
             <p class="article-text">
-                <i>🟢</i>Lorem ipsum dolor sit amet, consectetur.
+                <i class="fas fa-check-circle text-success"></i>Lorem ipsum dolor sit amet, consectetur.
+
             </p>
             <p class="article-text">
-                <i>🟢</i>Lorem ipsum dolor sit amet, consectetur.
+                <i class="fas fa-check-circle text-success"></i>Lorem ipsum dolor sit amet, consectetur.
+
             </p>
         </article>
 
         <article class="detail-img">
-            <img src="./assets/images/a744f46178fff1f8d8dd9d20e39559f8.jpg" alt="">
+            <img src="./assets/images/img-2.jpg" alt="image-detail">
         </article>
 
     </section>
@@ -168,7 +184,7 @@
             <h2 class="article-title">
                 connect with us get 35% offer to our all products
             </h2>
-            <button class="btn active">get now</button>
+            <button class="btn active">get now <i class="fas fa-key"></i></button>
         </div>
     </section>
 
@@ -179,39 +195,42 @@
         <div class="testimonials-div section-center">
 
             <div class="testimonial">
-                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i></div>
                 <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint beatae rerum suscipit
                     totam doloremque quibusdam voluptatibus impedit! Nam illum accusamus, neque rem placeat odit atque
                     obcaecati mollitia, facere autem labore.</p>
                 <div class="author">
                     <div class="author-img">
-                        <img src="./assets/images/a744f46178fff1f8d8dd9d20e39559f8.jpg" alt="">
+                        <img src="./assets/images/customer-1.jpg" alt="customer-1-img">
                     </div>
                     <p class="article-text">jonas due</p>
                 </div>
             </div>
             <div class="testimonial">
-                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i></div>
                 <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint beatae rerum suscipit
                     totam doloremque quibusdam voluptatibus impedit! Nam illum accusamus, neque rem placeat odit atque
                     obcaecati mollitia, facere autem labore.</p>
                 <div class="author">
                     <div class="author-img">
-                        <img src="./assets/images/a744f46178fff1f8d8dd9d20e39559f8.jpg" alt="">
+                        <img src="./assets/images/customer-2.jpg" alt="customer-2-img">
                     </div>
-                    <p class="article-text">jonas due</p>
+                    <p class="article-text">sara jestin </p>
                 </div>
             </div>
             <div class="testimonial">
-                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i></div>
                 <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint beatae rerum suscipit
                     totam doloremque quibusdam voluptatibus impedit! Nam illum accusamus, neque rem placeat odit atque
                     obcaecati mollitia, facere autem labore.</p>
                 <div class="author">
                     <div class="author-img">
-                        <img src="./assets/images/a744f46178fff1f8d8dd9d20e39559f8.jpg" alt="">
+                        <img src="./assets/images/customer-3.jpg" alt="customer-3-img">
                     </div>
-                    <p class="article-text">jonas due</p>
+                    <p class="article-text">william smith</p>
                 </div>
             </div>
         </div>
@@ -230,19 +249,25 @@
             <div class="address">
                 <div class="contact">
                     <h4 class="address-title">contact us</h4>
-                    <p><i></i>info@drilldonut.com</p>
-                    <p><i></i>+971 22 5551224</p>
+                    <p><i class="fas fa-envelope"></i>info@drilldonut.com</p>
+                    <p><i class="fas fa-phone"></i>+971 22 5551224</p>
                 </div>
                 <div class="email">
                     <h4 class="address-title">visit our office</h4>
-                    <p><i></i> Office 1931 Tamani Arts Tower Offices Business Bay, Dubai UAE</p>
+                    <p><i class="fas fa-map-marker-alt"></i>Office 1931 Tamani Arts Tower Offices Business Bay,
+                        Dubai UAE</p>
                 </div>
+
+
+
+
                 <div class="social">
                     <h4 class="address-title">follow us</h4>
-                    <div>
-                        <span>🟢</span>
-                        <span>🟢</span>
-                        <span>🟢</span>
+                    <div class="social-icons">
+                        <span><i class="fab fa-twitter social-icon"></i></span>
+                        <span><i class="fab fa-linkedin social-icon"></i>
+                        </span>
+                        <span><i class="fab fa-pinterest social-icon"></i></span>
                     </div>
                 </div>
             </div>
